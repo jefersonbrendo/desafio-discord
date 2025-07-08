@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  color: #23272a;
+  line-height: 1.6;
+  background-color: #fff;
+}
+
+header.hero {
+  background: linear-gradient(to right, #5865f2, #7289da);
+  color: white;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  max-width: 600px;
+  margin: 0 auto 2rem;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+button {
+  background-color: white;
+  color: #5865f2;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 999px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button.outline {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+}
+
+button:hover {
+  background-color: #ddd;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 4rem 2rem;
+  flex-wrap: wrap;
+}
+
+.feature.reverse {
+  flex-direction: row-reverse;
+}
+
+.feature img {
+  max-width: 400px;
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.feature .text {
+  max-width: 500px;
+}
+
+.feature h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+footer {
+  background-color: #23272a;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+
+.logo-footer {
+  width: 150px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .feature {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .feature.reverse {
+    flex-direction: column;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+}
